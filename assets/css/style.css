@@ -1,0 +1,413 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu a:hover {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 25px;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-background.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-logo {
+    width: 700px;
+    height: auto;
+}
+
+.hero-content h1 {
+    display: none;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-top: -20px;
+    max-width: 500px;
+}
+
+.cta-button {
+    margin-top: -200px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.services h2:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #4CAF50;
+    margin: 15px auto 0;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.service-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+    background: #f8f9fa;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.service-icon i {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+.service-card h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.service-card p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.features-column {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.features-column li {
+    margin: 12px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+}
+
+.features-column li:before {
+    content: "✓";
+    color: #4CAF50;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.service-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    margin-top: auto;
+}
+
+.service-button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+/* Portfolio Section */
+/* Portfolio Section */
+.portfolio {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.portfolio h2 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.portfolio h2:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #4CAF50;
+    margin: 15px auto 0;
+}
+
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Changed to always show 3 columns */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tour-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.tour-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 250px; /* Increased height */
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.tour-card:hover img {
+    transform: scale(1.05);
+}
+
+.tour-card h3 {
+    padding: 20px;
+    margin: 0;
+    color: #333;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.view-tour {
+    display: block; /* Changed to block for full-width button */
+    padding: 15px 20px;
+    margin: 0 20px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+    text-align: center;
+    font-weight: 500;
+}
+
+.view-tour:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .tour-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .tour-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 20px;
+    background: #333;
+    color: white;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .menu {
+        margin-top: 20px;
+    }
+    
+    .menu a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}

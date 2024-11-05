@@ -1,0 +1,16 @@
+{
+    "tours": [
+        {
+            "title": "Upstairs Apartment",
+            "image": "assets/images/tour1.jpg",
+            "description": "Modern 3-bedroom apartment",
+            "url": "https://bit.ly/ynsvirtualtour"
+        },
+        {
+            "title": "Sandton Sky",
+            "image": "assets/images/tour1.jpg",
+            "description": "Modern 3-bedroom apartment",
+            "url": "https://alex0072.github.io/VT-bachelour/VT-bachelour.html"
+        }
+    ]
+}
